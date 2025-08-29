@@ -34,16 +34,26 @@ object muñeco {
 
  method material() = vidrio
 
- method peso() = 0 
+ var peso = 0
+
+ method peso() {return peso}
+
+ method peso(nuevoPeso){
+   peso = nuevoPeso
+ }
 }
 
 object placa {
 
+   var peso = 0
+
+   var color = rojo
+
    method material() = vidrio
 
-   method peso() = 0
+   method peso() = peso
   
-   method color() = null
+   method color() = color
 }
 
 object arito {
